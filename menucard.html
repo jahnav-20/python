@@ -1,107 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Restaurant Menu Card</title>
-
+    <title>Menu Card</title>
     <style>
-        body {
-            background-color: #f5f5f5;
+        body{
             font-family: Arial, sans-serif;
+            background:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
         }
 
-        .menu-card {
-            width: 350px;
-            background-color: white;
-            margin: 50px auto;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 0px 15px gray;
+        .menu-card{
+            width:350px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.3);
+            padding:20px;
         }
 
-        h1 {
-            text-align: center;
-            color: darkred;
+        .menu-card h1{
+            text-align:center;
+            color:darkred;
+            border-bottom:2px solid darkred;
+            padding-bottom:10px;
         }
 
-        h2 {
-            color: green;
-            border-bottom: 2px solid orange;
-            padding-bottom: 5px;
+        .item{
+            display:flex;
+            justify-content:space-between;
+            padding:10px 0;
+            border-bottom:1px dashed gray;
         }
 
-        .item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            font-size: 18px;
+        .item:last-child{
+            border-bottom:none;
         }
 
-        .price {
-            color: red;
-            font-weight: bold;
+        .price{
+            color:green;
+            font-weight:bold;
         }
 
-        .item:hover {
-            background-color: #ffe6cc;
-            border-radius: 5px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            color: gray;
+        .footer{
+            text-align:center;
+            margin-top:20px;
+            color:#555;
+            font-size:14px;
         }
     </style>
-
 </head>
-
 <body>
 
-    <div class="menu-card">
+<div class="menu-card">
+    <h1>🍽 Restaurant Menu</h1>
 
-        <h1>🍴 Food Menu</h1>
-
-        <h2>Starters</h2>
-
-        <div class="item">
-            <span>Veg Manchuria</span>
-            <span class="price">₹120</span>
-        </div>
-
-        <div class="item">
-            <span>Paneer Tikka</span>
-            <span class="price">₹180</span>
-        </div>
-
-        <h2>Main Course</h2>
-
-        <div class="item">
-            <span>Veg Biryani</span>
-            <span class="price">₹200</span>
-        </div>
-
-        <div class="item">
-            <span>Chicken Biryani</span>
-            <span class="price">₹250</span>
-        </div>
-
-        <h2>Drinks</h2>
-
-        <div class="item">
-            <span>Cold Coffee</span>
-            <span class="price">₹80</span>
-        </div>
-
-        <div class="item">
-            <span>Fresh Juice</span>
-            <span class="price">₹100</span>
-        </div>
-
-        <div class="footer">
-            <p>Thank You! Visit Again 😊</p>
-        </div>
-
+    <div class="item">
+        <span>Veg Biryani</span>
+        <span class="price">₹180</span>
     </div>
+
+    <div class="item">
+        <span>Chicken Biryani</span>
+        <span class="price">₹250</span>
+    </div>
+
+    <div class="item">
+        <span>Paneer Butter Masala</span>
+        <span class="price">₹220</span>
+    </div>
+
+    <div class="item">
+        <span>Butter Naan</span>
+        <span class="price">₹40</span>
+    </div>
+
+    <div class="item">
+        <span>Cold Coffee</span>
+        <span class="price">₹120</span>
+    </div>
+
+    <div class="footer">
+        Thank You! Visit Again 😊
+    </div>
+</div>
 
 </body>
 </html>
