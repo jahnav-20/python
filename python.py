@@ -1,11 +1,12 @@
-# Input string
+# Separate vowels and consonants from a string
+
 s = "hi hello raju"
 
 vowels = ""
 consonants = ""
 
 for ch in s:
-    if ch.isalpha():  # Ignore spaces
+    if ch.isalpha():      # Ignore spaces
         if ch.lower() in "aeiou":
             vowels += ch
         else:
