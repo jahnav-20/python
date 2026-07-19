@@ -1,68 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Multimedia using IFrame</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Tags Example</title>
 </head>
+<body>
 
-<body style="background-color: lightyellow;">
+    <h1 align="center">Image, Audio, Video & Iframe Example</h1>
 
-    <center>
+    <hr>
 
-        <h1>🎓 10K Coders Multimedia Page 🎓</h1>
-        <hr>
+    <!-- Image -->
+    <h2>Image</h2>
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+         alt="Laptop Image"
+         width="400">
 
-        <!-- Image -->
-        <h2>Image</h2>
-        <img
-            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
-            width="400"
-            height="250"
-            alt="Students learning"
-        >
+    <hr>
 
-        <hr>
+    <!-- Audio -->
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
 
-        <!-- Audio -->
-        <h2>Audio</h2>
-        <audio controls>
-            <source src="songs/song.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    <hr>
 
-        <hr>
+    <!-- Video -->
+    <h2>Video</h2>
+    <video width="500" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-        <!-- Video -->
-        <h2>Video</h2>
-        <video width="450" height="250" controls>
-            <source src="videos/video.mp4" type="video/mp4">
-            Your browser does not support the video element.
-        </video>
+    <hr>
 
-        <hr>
-
-        <!-- IFrame -->
-        <h2>10K Coders Website</h2>
-        <iframe
-            src="https://www.10kcoders.com"
-            width="700"
-            height="400">
-        </iframe>
-
-        <hr>
-
-        <h3>Useful Links</h3>
-
-        <a href="https://www.10kcoders.com" target="_blank">10K Coders</a> |
-        <a href="https://www.youtube.com" target="_blank">YouTube</a> |
-        <a href="https://github.com" target="_blank">GitHub</a>
-
-        <hr>
-
-        <marquee>
-            Welcome to 10K Coders Multimedia Task
-        </marquee>
-
-    </center>
+    <!-- 10K Coders Website -->
+    <h2>10K Coders Website</h2>
+    <iframe
+        src="https://www.10kcoders.com/"
+        width="800"
+        height="500"
+        title="10K Coders">
+    </iframe>
 
 </body>
 </html>
