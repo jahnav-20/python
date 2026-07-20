@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f7e8d2;
+    overflow:hidden;
+}
+
+.gallery{
+    width:900px;
+    height:650px;
+    position:relative;
+}
+
+.diamond{
+    position:absolute;
+    width:180px;
+    height:180px;
+    border:6px solid #c78c2f;
+    border-radius:12px;
+    overflow:hidden;
+    transform:rotate(45deg);
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.diamond img{
+    width:150%;
+    height:150%;
+    object-fit:cover;
+    transform:rotate(-45deg) scale(1.2);
+    position:absolute;
+    top:-25%;
+    left:-25%;
+}
+
+.center{
+    width:230px;
+    height:230px;
+    left:335px;
+    top:210px;
+}
+
+.top-left{
+    left:170px;
+    top:60px;
+}
+
+.top-right{
+    right:170px;
+    top:60px;
+}
+
+.bottom-left{
+    left:170px;
+    bottom:60px;
+}
+
+.bottom-right{
+    right:170px;
+    bottom:60px;
+}
+
+.diamond:hover{
+    transform:rotate(45deg) scale(1.08);
+}
