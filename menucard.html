@@ -1,144 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sai Restaurant</title>
-<link rel="stylesheet" href="style.css">
-</head>
-    <title>Menu Card</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#f2f2f2;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-        }
-
-        .menu-card{
-            width:350px;
-            background:white;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.3);
-            padding:20px;
-        }
-
-        .menu-card h1{
-            text-align:center;
-            color:darkred;
-            border-bottom:2px solid darkred;
-            padding-bottom:10px;
-        }
-
-        .item{
-            display:flex;
-            justify-content:space-between;
-            padding:10px 0;
-            border-bottom:1px dashed gray;
-        }
-
-<body bgcolor="lightyellow">
-        .item:last-child{
-            border-bottom:none;
-        }
-
-        .price{
-            color:green;
-            font-weight:bold;
-        }
-
-        .footer{
-            text-align:center;
-            margin-top:20px;
-            color:#555;
-            font-size:14px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Card</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<center>
-    <h1><font color="red">SAI RESTAURANT</font></h1>
-    <h3 style="color: black;"><i>Welcome to Sai Restaurant</i></h3>
-    <hr width="80%">
-</center>
 <div class="menu-card">
-    <h1>🍽 Restaurant Menu</h1>
 
-<h2><font color="green">VEG MENU</font></h2>
-<img src="https://rakskitchen.net/wp-content/uploads/2014/12/dum-aloo-lunch-menu.jpg" alt="Veg Menu" width="250">
-<ul>
-    <li>Veg Biryani - ₹180</li>
-    <li>Paneer Butter Masala - ₹220</li>
-    <li>Veg Fried Rice - ₹170</li>
-    <li>Gobi Manchurian - ₹160</li>
-    <li>Butter Naan - ₹40</li>
-    <li>Palak Paneer - ₹210</li>
-    <li>Mushroom Curry - ₹200</li>
-</ul>
+    <h1>🍴 FOOD MENU 🍴</h1>
+    <p class="tagline">Fresh • Delicious • Affordable</p>
+
+    <hr>
+
+    <h2>🥗 Starters</h2>
+
+    <div class="item">
+        <span>Veg Manchurian</span>
+        <span>₹180</span>
+    </div>
+
+    <div class="item">
+        <span>Chicken 65</span>
+        <span>₹220</span>
+    </div>
+
+    <div class="item">
+        <span>French Fries</span>
+        <span>₹120</span>
+    </div>
+
+    <hr>
+
+    <h2>🍛 Main Course</h2>
+
     <div class="item">
         <span>Veg Biryani</span>
-        <span class="price">₹180</span>
+        <span>₹220</span>
     </div>
 
-<h2><font color="red">NON-VEG MENU</font></h2>
-<img src="https://static.vecteezy.com/system/resources/thumbnails/029/858/402/small/of-tandoori-chicken-as-a-dish-in-a-high-end-restaurant-generative-ai-photo.jpg" alt="nonveg" width="250" height="300">
-<ol type="1">
-    <li>Chicken Biryani - ₹250</li>
-    <li>Mutton Biryani - ₹350</li>
-    <li>Chicken Fried Rice - ₹220</li>
-    <li>Chicken Manchurian - ₹240</li>
-    <li>Chicken Curry - ₹260</li>
-    <li>Fish Fry - ₹300</li>
-    <li>Prawns Fry - ₹350</li>
-    <li>Egg Biryani - ₹180</li>
-</ol>
     <div class="item">
         <span>Chicken Biryani</span>
-        <span class="price">₹250</span>
+        <span>₹280</span>
     </div>
 
-<h2><font color="blue">BEVERAGES</font></h2>
-<img src="https://thumbs.dreamstime.com/b/cans-beverages-19492376.jpg" alt="beverages" width="250">
-<ul type="square">
-    <li>Mineral Water - ₹20</li>
-    <li>Coca-Cola - ₹40</li>
-    <li>Sprite - ₹40</li>
-    <li>Fresh Lime Juice - ₹50</li>
-    <li>Lassi - ₹60</li>
-    <li>Coffee - ₹40</li>
-    <li>Tea - ₹20</li>
-</ul>
-    <div class="item">
-        <span>Paneer Butter Masala</span>
-        <span class="price">₹220</span>
-    </div>
-
-<h2><font color="purple">DESSERTS</font></h2>
-<img src="https://www.cookwithkushi.com/wp-content/uploads/2022/11/best_easy_christmas_desserts.jpg" alt="desserts" width="250">
-<ul>
-    <li>Ice Cream - ₹80</li>
-    <li>Gulab Jamun - ₹60</li>
-    <li>Double Ka Meetha - ₹90</li>
-    <li>Chocolate Brownie - ₹120</li>
-</ul>
     <div class="item">
         <span>Butter Naan</span>
-        <span class="price">₹40</span>
+        <span>₹50</span>
     </div>
 
-<hr>
+    <hr>
+
+    <h2>🥤 Drinks</h2>
+
     <div class="item">
-        <span>Cold Coffee</span>
-        <span class="price">₹120</span>
+        <span>Cool Drink</span>
+        <span>₹50</span>
     </div>
 
-<center>
-    <h2>Thank You! Visit Again</h2>
-</center>
-    <div class="footer">
-        Thank You! Visit Again 😊
+    <div class="item">
+        <span>Mango Juice</span>
+        <span>₹80</span>
     </div>
+
+    <div class="item">
+        <span>Fresh Lime</span>
+        <span>₹70</span>
+    </div>
+
+    <hr>
+
+    <h2>🍨 Desserts</h2>
+
+    <div class="item">
+        <span>Ice Cream</span>
+        <span>₹90</span>
+    </div>
+
+    <div class="item">
+        <span>Gulab Jamun</span>
+        <span>₹80</span>
+    </div>
+
+    <div class="item">
+        <span>Brownie</span>
+        <span>₹150</span>
+    </div>
+
 </div>
 
 </body>
